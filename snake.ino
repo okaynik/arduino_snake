@@ -177,10 +177,10 @@ void drawFrame(){
 }
 
 void activatePixel(byte x, byte y){
-  digitalWrite(rows[x], HIGH);  digitalWrite(cols[y], LOW);
-  digitalWrite(rows[x], LOW);  digitalWrite(cols[y], HIGH);   
+  digitalWrite(rows[x], LOW);  digitalWrite(cols[y], HIGH);
+  digitalWrite(rows[x], HIGH);  digitalWrite(cols[y], LOW);   
 }
 
 void deactivatePixel(byte x, byte y){
-  digitalWrite(rows[x], LOW);  digitalWrite(cols[y], HIGH);
+  digitalWrite(rows[x], HIGH);  digitalWrite(cols[y], LOW );
 }
